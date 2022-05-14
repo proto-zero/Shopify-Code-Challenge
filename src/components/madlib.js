@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './madlib.css';
+import './genie.css';
 
 function Genie() {
     const [userPrompt, setUserPrompt] = useState("");
@@ -56,8 +56,14 @@ function Genie() {
 
 
     return (
-        <div className="container">
-            hello there
+        <div className="main-container">
+            <div className="app-container">
+            <div className="title-container">
+                    <div className="title">
+                        <h1>MadLib Generator</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

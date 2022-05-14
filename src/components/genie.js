@@ -57,7 +57,7 @@ function Genie() {
 
     return (
         <div className="main-container">
-            <div className="genie-container">
+            <div className="app-container">
                 <div className="title-container">
                     <div className="title">
                         <h1>Internet AI Genie</h1>

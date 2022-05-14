@@ -7,9 +7,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
   }
   
-  .genie-container {
+  .app-container {
     display: flex;
     flex-direction: column;
     background: linear-gradient(#DB0026, #FF0F39);
@@ -84,7 +85,7 @@ body {
   
   /* /////////////////////////////// 280 px /////////////////////////////////// */
   @media (min-width: 280px) {
-    .genie-container {
+    .app-container {
       border-radius: 0;
       width: 100%;
     }
@@ -124,7 +125,7 @@ body {
       padding-top: 20px;
     }
   
-    .genie-container {
+    .app-container {
       border-radius: 15px;
       width: 80%;
       border: 2px solid #F8F8F8;
@@ -179,7 +180,7 @@ body {
   
   /* /////////////////////////////// 1024 px /////////////////////////////////// */
   @media (min-width: 1440px) {
-    .genie-container {
+    .app-container {
       width: 1152px;
     }
   
