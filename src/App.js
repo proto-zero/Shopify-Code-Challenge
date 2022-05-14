@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Genie from './components/genie';
-import Madlib from './components/madlib';
+import Script from './components/script';
 import './App.css';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Genie />
-      <Madlib />
+      <Script />
     </div>
   );
 }

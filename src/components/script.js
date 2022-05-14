@@ -1,11 +1,11 @@
 import { useState } from "react";
-import './genie.css';
+import './style.css';
 
 function Genie() {
     const [userPrompt, setUserPrompt] = useState("");
-    const [result1, setResult1] = useState("");
-    const [result2, setResult2] = useState("");
-    const [result3, setResult3] = useState("");
+    const [result1, setResult1] = useState("_____");
+    const [result2, setResult2] = useState("_____");
+    const [result3, setResult3] = useState("_____");
 
     const data1 = {
         prompt: `Halloween costume from ${userPrompt}`,
@@ -85,14 +85,14 @@ function Genie() {
             <div className="app-container">
                 <div className="title-container">
                     <div className="title">
-                        <h1>MadLib Generator</h1>
+                        <h1>Script Generator</h1>
                     </div>
                 </div>
-                <div className="madlib-container">
+                <div className="script-container">
                     <div className="user-input">
-                        USER INPUT
+                        <h2>Answer the questions to fill in the blanks in the script.</h2>
+                        <div>name a time period</div>
                         <form onSubmit={handleSubmit1}>
-                            <p>name a time period</p>
                             <input
                                 type="text"
                                 placeholder="Renaissance"
@@ -100,8 +100,8 @@ function Genie() {
                             />
                             <button>submit</button>
                         </form>
+                        <div>name a location</div>
                         <form onSubmit={handleSubmit2}>
-                           <p>name a location</p>
                            <input
                                 type="text"
                                 placeholder="Space"
@@ -109,8 +109,8 @@ function Genie() {
                             />
                             <button>submit</button>
                         </form>
+                        <div>name of an animal</div>
                         <form onSubmit={handleSubmit3}>
-                            <p>name an animal</p>
                             <input
                                 type="text"
                                 placeholder="Cat"
@@ -119,10 +119,12 @@ function Genie() {
                             <button>submit</button>
                         </form>
                     </div>
-                    <div className="results-container">
-                        SCRIPT
-                        <p>Ted: Barney, what did you do with my {result1}</p>
-                        <p>Barney: Ted, you don't need that anymore. Tonight we're dressing up as {result2}s. It's gonna be {result3}!</p>
+                    <div className="script-result">
+                        <h2>SCRIPT</h2>
+                        <div>Ted</div>
+                        <div>Barney, what did you do with my {result1}</div><br />
+                        <div>Barney</div> 
+                        <div>Ted, you don't need that anymore. Tonight we're dressing up as {result2}s. It's gonna be {result3}!</div>
                     </div>
                 </div>
             </div>

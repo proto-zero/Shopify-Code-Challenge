@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './genie.css';
+import './style.css';
 
 function Genie() {
     const [userPrompt, setUserPrompt] = useState("");
@@ -32,10 +32,10 @@ function Genie() {
         setUserPrompt("");
     }
 
-    function testyTest() {
-        setPromptArray(promptArray => [...promptArray, userPrompt])
-        setResult(result => [...result, userPrompt]);
-    }
+    // function testyTest() {
+    //     setPromptArray(promptArray => [...promptArray, userPrompt])
+    //     setResult(result => [...result, userPrompt]);
+    // }
 
     let size = result.length;
 
@@ -66,7 +66,7 @@ function Genie() {
                 <div className="user-container">
                     <div className="user-input">
                         <h2>Ask of the Internet Genie...</h2>
-                        <form className="form" onSubmit={testyTest}>
+                        <form className="form" onSubmit={handleSubmit}>
                             <input
                                 type="text"
                                 value={userPrompt}
