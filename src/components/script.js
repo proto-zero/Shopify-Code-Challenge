@@ -40,7 +40,7 @@ function Genie() {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
             },
             body: JSON.stringify(data1),
         });
@@ -55,7 +55,7 @@ function Genie() {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
             },
             body: JSON.stringify(data2),
         });
@@ -70,7 +70,7 @@ function Genie() {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
             },
             body: JSON.stringify(data3),
         });

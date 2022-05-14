@@ -14,6 +14,8 @@ function Genie() {
         frequency_penalty: 0.0,
         presence_penalty: 0.0,
     };
+
+    console.log(process.env.OPENAI_API_KEY)
     
     async function handleSubmit(e) {
         e.preventDefault();
@@ -21,7 +23,7 @@ function Genie() {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
             },
             body: JSON.stringify(data),
         });
@@ -31,11 +33,6 @@ function Genie() {
         setPromptArray(promptArray => [...promptArray, userPrompt])
         setUserPrompt("");
     }
-
-    // function testyTest() {
-    //     setPromptArray(promptArray => [...promptArray, userPrompt])
-    //     setResult(result => [...result, userPrompt]);
-    // }
 
     let size = result.length;
 
