@@ -66,6 +66,10 @@ body {
     padding: 5px;
     margin: 0 10px 10px 0;
   }
+
+  li {
+    margin: 10px;
+  }
   
   .results {
    background: linear-gradient(#5B83B2, #7E9DC2);
@@ -151,6 +155,10 @@ body {
       align-items: center;
       width: 50%;
     }
+
+    .user-input h2 {
+      text-align: center;
+    }
   
     input {
       width: 50%;
@@ -158,6 +166,14 @@ body {
   
     button {
       width: fit-content;
+    }
+
+    .results-container {
+      border-left: 2px solid #F8F8F8;
+    }
+
+    .results-container h2 {
+      text-align: center;
     }
   }
   

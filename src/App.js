@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import Genie from './components/genie';
+import Madlib from './components/madlib';
 import './App.css';
 
 function App() {
 
   return (
-    <Genie></Genie>
+    <div>
+      <Genie />
+      <Madlib />
+    </div>
   );
 }
 

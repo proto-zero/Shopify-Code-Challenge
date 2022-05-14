@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './genie.css';
+import './madlib.css';
 
 function Genie() {
     const [userPrompt, setUserPrompt] = useState("");
@@ -44,7 +44,7 @@ function Genie() {
             {promptArray.reverse().map((prompt, i) => (
                 <div>
                     <div className="prompt">
-                        <li key={prompt}>{prompt}</li>
+                        <p key={prompt}>{prompt}</p>
                     </div>
                     <div className="results">
                         <p key={i}>{result[size - (i + 1)]}</p>
@@ -56,32 +56,8 @@ function Genie() {
 
 
     return (
-        <div className="main-container">
-            <div className="genie-container">
-                <div className="title-container">
-                    <div className="title">
-                        <h1>Internet AI Genie</h1>
-                    </div>
-                </div>
-                <div className="user-container">
-                    <div className="user-input">
-                        <h2>Ask of the Internet Genie...</h2>
-                        <form className="form" onSubmit={testyTest}>
-                            <input
-                                type="text"
-                                value={userPrompt}
-                                placeholder="Name my band?"
-                                onChange={(e) => setUserPrompt(e.target.value)}
-                            />
-                            <button type="submit">Submit Question</button>
-                        </form>
-                     </div>
-                    <div className="results-container">
-                        <h2>...Receive an answer</h2>
-                        {resultArray}
-                    </div>
-                </div>
-            </div>
+        <div className="container">
+            hello there
         </div>
     )
 }
