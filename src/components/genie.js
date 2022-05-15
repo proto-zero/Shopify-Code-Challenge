@@ -15,7 +15,7 @@ function Genie() {
         presence_penalty: 0.0,
     };
 
-    console.log(process.env.OPENAI_API_KEY)
+    console.log(process.env.REACT_APP_API_KEY)
     
     async function handleSubmit(e) {
         e.preventDefault();

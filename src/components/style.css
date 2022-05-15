@@ -93,9 +93,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(#5B83B2, #7E9DC2);
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 10px;
+    box-shadow: 1px 1px 2px #121212, 
+               2px 2px 4px #232323,
+               3px 3px 6px #343434;
     margin: 20px;
-    padding-top: 20px;
-    border-top: 2px solid #F8F8F8;
+    padding: 20px 0;
   }
   
   /* /////////////////////////////// 280 px /////////////////////////////////// */
@@ -118,6 +124,11 @@ body {
       align-items: center;
       width: 100%;
     }
+
+    .user-input {
+      padding: 10px;
+      text-align: center;
+    }
   
     form {
       flex-direction: column;
@@ -131,6 +142,10 @@ body {
   
     button {
       width: 100%;
+    }
+
+    .results-container {
+      border-top: 2px solid white;
     }
   }
   
@@ -185,6 +200,7 @@ body {
     }
 
     .results-container {
+      border-top: none;
       border-left: 2px solid #F8F8F8;
     }
 
