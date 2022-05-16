@@ -3,8 +3,8 @@ import './style.css';
 
 function Genie() {
     const [userPrompt, setUserPrompt] = useState("");
-    const [promptArray, setPromptArray] = useState(["name a band", "name a book", "name an album"]);
-    const [result, setResult] = useState(["the beatles", "that one time in amsterdam", "metal gear 20th anniversary metal gear music collection"]);
+    const [promptArray, setPromptArray] = useState(["What should I have for dinner?", "Name a book.", "What's your favorite album?"]);
+    const [result, setResult] = useState(["A sandwich and a salad.", "Hadji Murad.", "Tron Legacy OST."]);
 
     const data = {
         prompt: userPrompt,

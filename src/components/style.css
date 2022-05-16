@@ -75,6 +75,7 @@ body {
   .results {
    background: linear-gradient(#5B83B2, #7E9DC2);
    color: #F8F8F8;
+   text-align: center;
    border-radius: 15px;
    padding: 5px;
    margin-left: 10px;
@@ -101,7 +102,7 @@ body {
                2px 2px 4px #232323,
                3px 3px 6px #343434;
     margin: 20px;
-    padding: 20px 0;
+    padding: 20px 10px;
   }
   
   /* /////////////////////////////// 280 px /////////////////////////////////// */
