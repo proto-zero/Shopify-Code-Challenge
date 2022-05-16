@@ -15,7 +15,7 @@ function Genie() {
         presence_penalty: 0.0,
     };
 
-    console.log(process.env.REACT_APP_API_KEY)
+    const apiKey = process.env.REACT_APP_API_KEY;
     
     async function handleSubmit(e) {
         e.preventDefault();
@@ -23,7 +23,7 @@ function Genie() {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+            Authorization: `Bearer ${apiKey}`,
             },
             body: JSON.stringify(data),
         });

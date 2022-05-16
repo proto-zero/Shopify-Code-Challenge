@@ -7,6 +7,8 @@ function Genie() {
     const [result2, setResult2] = useState("_____");
     const [result3, setResult3] = useState("_____");
 
+    const apiKey = process.env.REACT_APP_API_KEY;
+
     const data1 = {
         prompt: `Halloween costume from ${userPrompt}`,
         temperature: 0.5, 
@@ -40,7 +42,7 @@ function Genie() {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+            Authorization: `Bearer ${apiKey}`,
             },
             body: JSON.stringify(data1),
         });
@@ -55,7 +57,7 @@ function Genie() {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+            Authorization: `Bearer ${apiKey}`,
             },
             body: JSON.stringify(data2),
         });
@@ -70,7 +72,7 @@ function Genie() {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+            Authorization: `Bearer ${apiKey}`,
             },
             body: JSON.stringify(data3),
         });
