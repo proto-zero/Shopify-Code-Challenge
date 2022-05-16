@@ -10,7 +10,7 @@ function Genie() {
     const apiKey = process.env.REACT_APP_API_KEY;
 
     const data1 = {
-        prompt: `Halloween costume from ${userPrompt}`,
+        prompt: `Tell me everything you know about ${userPrompt}`,
         temperature: 0.5, 
         max_tokens: 64,
         top_p: 1.0,
@@ -19,7 +19,7 @@ function Genie() {
     };
 
     const data2 = {
-        prompt: `Job title of someone who works in ${userPrompt}`,
+        prompt: `What is the name of a job for a person who likes ${userPrompt}?`,
         temperature: 0.5, 
         max_tokens: 64,
         top_p: 1.0,
@@ -28,7 +28,7 @@ function Genie() {
     };
 
     const data3 = {
-        prompt: `catchphrase of a ${userPrompt}`,
+        prompt: `Catchphrase of a ${userPrompt}`,
         temperature: 0.5, 
         max_tokens: 64,
         top_p: 1.0,
@@ -93,25 +93,25 @@ function Genie() {
                 <div className="script-container">
                     <div className="user-input">
                         <h2>Answer the questions to fill in the blanks in the script.</h2>
-                        <div>name a time period</div>
+                        <div>Choose a field of study</div>
                         <form onSubmit={handleSubmit1}>
                             <input
                                 type="text"
-                                placeholder="Renaissance"
+                                placeholder="Architecture"
                                 onChange={(e) => setUserPrompt(e.target.value)}
                             />
                             <button>submit</button>
                         </form>
-                        <div>name a location</div>
+                        <div>Choose a hobby</div>
                         <form onSubmit={handleSubmit2}>
                            <input
                                 type="text"
-                                placeholder="Space"
+                                placeholder="Cooking"
                                 onChange={(e) => setUserPrompt(e.target.value)}
                             />
                             <button>submit</button>
                         </form>
-                        <div>name of an animal</div>
+                        <div>Choose an animal</div>
                         <form onSubmit={handleSubmit3}>
                             <input
                                 type="text"
@@ -124,9 +124,9 @@ function Genie() {
                     <div className="script-result">
                         <h2>SCRIPT</h2>
                         <div>Ted</div>
-                        <div>Barney, what did you do with my {result1}</div><br />
+                        <div>{result1}</div><br />
                         <div>Barney</div> 
-                        <div>Ted, you don't need that anymore. Tonight we're dressing up as {result2}s. It's gonna be {result3}!</div>
+                        <div>Ted, no one cares about that. Now put on this {result2} costume and meet me in the bar. Tonight is gonna be {result3}</div>
                     </div>
                 </div>
             </div>

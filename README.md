@@ -2,6 +2,14 @@
 
 - hide API Key in env
 
+prompts
+1 choose a field of study - Tell me everything you know about blank.
+2 choose a hobby - What is the name of a job for a person who likes blank?
+3 choose an animal - what is a blank's favorite catchphrase?
+
+TED - "BLANK1"
+BARNEY - Ted, nobody cares about "PROMPT1". Now put on this "BLANK2" costume and let's head down to the bar. it's gonna be "BLANK3".
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

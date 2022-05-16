@@ -6,6 +6,8 @@ function Genie() {
     const [promptArray, setPromptArray] = useState(["What should I have for dinner?", "Name a book.", "What's your favorite album?"]);
     const [result, setResult] = useState(["A sandwich and a salad.", "Hadji Murad.", "Tron Legacy OST."]);
 
+    const apiKey = process.env.REACT_APP_API_KEY;
+
     const data = {
         prompt: userPrompt,
         temperature: 0.5, 
@@ -14,8 +16,6 @@ function Genie() {
         frequency_penalty: 0.0,
         presence_penalty: 0.0,
     };
-
-    const apiKey = process.env.REACT_APP_API_KEY;
     
     async function handleSubmit(e) {
         e.preventDefault();
@@ -39,7 +39,7 @@ function Genie() {
     let resultArray = (
         <div>
             {promptArray.reverse().map((prompt, i) => (
-                <div>
+                <div className="result-array">
                     <div className="prompt">
                         <li key={prompt}>{prompt}</li>
                     </div>
