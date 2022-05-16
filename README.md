@@ -1,14 +1,14 @@
-# Sean Lenhart Shopify Code Challenge
+# <span style="color:red">Sean Lenhart Shopify Code Challenge</span>
 
 ## <a href="https://shopify-code.herokuapp.com/">shopify-code.herokuapp.com/</a>
 
-## Project Component Stages
+## <span style="color:red">Project Component Stages</span>
 
 App.js contains Genie.js and Script.js components
 
 - Genie and Script use Style.css
 
-## Production Log
+## <span style="color:red">Production Log</span>
 
 prompts
 1 choose a field of study - Tell me everything you know about blank.
@@ -18,7 +18,7 @@ prompts
 TED - "BLANK1"
 BARNEY - Ted, nobody cares about that. Now put on this "BLANK2" costume and let's head down to the bar. it's gonna be "BLANK3".
 
-## Outline
+## <span style="color:red">Outline<span>
 
 ### Genie
 
@@ -38,7 +38,7 @@ BARNEY - Ted, nobody cares about that. Now put on this "BLANK2" costume and let'
 
 - Insert the returned values into their spots in the script.
 
-## TODO
+## <span style="color:red">TODO<span>
 
 ### Internet AI Genie
 
@@ -63,6 +63,12 @@ BARNEY - Ted, nobody cares about that. Now put on this "BLANK2" costume and let'
 - [x] set up questions for the user to feed into the API prompts
 
 - [x] organize outcome into the script
+
+### Bonus
+
+- [] allow the user to choose an engine from a dropdown and insert said engine into the fetch request
+
+- [] use cookies to let the user save their previous prompts and answers
 
 # Getting Started with Create React App
 
