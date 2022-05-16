@@ -1,8 +1,8 @@
-# Sean Lenhart Shopify Code Challenge<
+# Sean Lenhart Shopify Code Challenge
 
 ## <a href="https://shopify-code.herokuapp.com/" target="_blank">shopify-code.herokuapp.com/</a>
 
-## Project Component Stages<
+## Project Component Stages
 
 App.js contains Genie.js and Script.js components
 
@@ -37,6 +37,8 @@ App.js contains Genie.js and Script.js components
 - Originally for the layout I wanted to make a monochromatic theme using shades of red. I made use of Canva's color scheme styling tools and discovered a great theme that looked sharp and fun. I then used the color wheel to find complimentary Monochromatic colors to add a subtle linear-gradient to the backgrounds.
 
 - Using a great article about <a href="https://www.joshwcomeau.com/css/designing-shadows/">Designing Beautiful Shadows in CSS</a> I made sure to add a few layers of shadow to a few elements to help them stand out in different heights. I also added a teensy bit of text shadow with the app titles to give them a bit of pop.
+
+- During the layout design I made sure to keep the mobile view in mind, using media queries within the css file to change the layout depending on the screen size.
 
 ## Outline
 
