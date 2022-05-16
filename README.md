@@ -1,24 +1,39 @@
-# <span style="color:red">Sean Lenhart Shopify Code Challenge</span>
+# Sean Lenhart Shopify Code Challenge<
 
-## <a href="https://shopify-code.herokuapp.com/">shopify-code.herokuapp.com/</a>
+## <a href="https://shopify-code.herokuapp.com/ target="_blank">shopify-code.herokuapp.com/</a>
 
-## <span style="color:red">Project Component Stages</span>
+## Project Component Stages<
 
 App.js contains Genie.js and Script.js components
 
 - Genie and Script use Style.css
 
-## <span style="color:red">Production Log</span>
+## Production Log
 
-prompts
+- Connecting to the API using the provided JS code was relatively easy. It took a minute to figure out hwo to identify the returned value, but a quick console log of the handleSubmit function's fetch const revealed all of the values returned and what I needed to show to the user.
+
+- The provided JS code included a preset prompt. While for the Genie app I replaced this with the userPrompt, it did give me an idea. The OPENAI starter kit included code with a premade prompt that let the user add extra specificity, but the user still knew what the overall prompt was going to be. I thought creating a madlibs style app where the user didn't know the context of the questions they were asked would be a fun addition to the challenge.
+
+- Creating the prompts for the Script app was a fun creative challenge. I had to rework it a few times to make sure I was utilizing as much of the return value from the API as I could. Below I detail the prompts, with What I ask the User - What I ask the API
+
+Prompts
 1 choose a field of study - Tell me everything you know about blank.
 2 choose a hobby - What is the name of a job for a person who likes blank?
 3 choose an animal - what is a blank's favorite catchphrase?
 
+Script
 TED - "BLANK1"
 BARNEY - Ted, nobody cares about that. Now put on this "BLANK2" costume and let's head down to the bar. it's gonna be "BLANK3".
 
-## <span style="color:red">Outline<span>
+- I fussed with the temperature and max_tokens values of the second prompt to try to eliminate long-winded answers from the API. It's a bit of a wildcard, but I think that adds to the whimsy of the overall app.
+
+- I made sure to use proper html semantics and to keep the final product accessible to screen readers. As there are no links or images I didn't have to make use of alt text.
+
+- Originally for the layout I wanted to make a monochromatic theme using shades of red. I made use of Canva's color scheme styling tools and discovered a great theme that looked sharp and fun. I then used the color wheel to find complimentary Monochromatic colors to add a subtle linear-gradient to the backgrounds.
+
+- Using a great article about <a href="https://www.joshwcomeau.com/css/designing-shadows/">Designing Beautiful Shadows in CSS</a> I made sure to add a few layers of shadow to a few elements to help them stand out in different heights. I also added a teensy bit of text shadow with the app titles to give them a bit of pop.
+
+## Outline
 
 ### Genie
 
@@ -38,7 +53,7 @@ BARNEY - Ted, nobody cares about that. Now put on this "BLANK2" costume and let'
 
 - Insert the returned values into their spots in the script.
 
-## <span style="color:red">TODO<span>
+## TODO
 
 ### Internet AI Genie
 
