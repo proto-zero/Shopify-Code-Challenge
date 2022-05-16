@@ -93,7 +93,7 @@ function Genie() {
                 <div className="script-container">
                     <div className="user-input">
                         <h2>Answer the questions to fill in the blanks in the script.</h2>
-                        <div>Choose a field of study</div>
+                        <h3>Choose a field of study</h3>
                         <form onSubmit={handleSubmit1}>
                             <input
                                 type="text"
@@ -102,7 +102,7 @@ function Genie() {
                             />
                             <button>submit</button>
                         </form>
-                        <div>Choose a hobby</div>
+                        <h3>Choose a hobby</h3>
                         <form onSubmit={handleSubmit2}>
                            <input
                                 type="text"
@@ -111,7 +111,7 @@ function Genie() {
                             />
                             <button>submit</button>
                         </form>
-                        <div>Choose an animal</div>
+                        <h3>Choose an animal</h3>
                         <form onSubmit={handleSubmit3}>
                             <input
                                 type="text"
@@ -123,10 +123,10 @@ function Genie() {
                     </div>
                     <div className="script-result">
                         <h2>SCRIPT</h2>
-                        <div>Ted</div>
-                        <div>{result1}</div><br />
-                        <div>Barney</div> 
-                        <div>Ted, no one cares about that. Now put on this {result2} costume and meet me in the bar. Tonight is gonna be {result3}</div>
+                        <p>Ted</p>
+                        <p>{result1}</p><br />
+                        <p>Barney</p> 
+                        <p>Ted, no one cares about that. Now put on this {result2} costume and meet me in the bar. Tonight is gonna be {result3}</p>
                     </div>
                 </div>
             </div>
