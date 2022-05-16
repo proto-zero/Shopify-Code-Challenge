@@ -20,8 +20,8 @@ function Genie() {
 
     const data2 = {
         prompt: `What is the name of a job for a person who likes ${userPrompt}?`,
-        temperature: 0.5, 
-        max_tokens: 64,
+        temperature: 0.3, 
+        max_tokens: 8,
         top_p: 1.0,
         frequency_penalty: 0.0,
         presence_penalty: 0.0,
