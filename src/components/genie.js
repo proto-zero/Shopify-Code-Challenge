@@ -8,6 +8,8 @@ function Genie() {
 
     const apiKey = process.env.REACT_APP_API_KEY;
 
+    console.log(apiKey);
+
     const data = {
         prompt: userPrompt,
         temperature: 0.5, 
