@@ -1,6 +1,6 @@
 # Sean Lenhart Shopify Code Challenge<
 
-## <a href="https://shopify-code.herokuapp.com/ target="_blank">shopify-code.herokuapp.com/</a>
+## <a href="https://shopify-code.herokuapp.com/" target="_blank">shopify-code.herokuapp.com/</a>
 
 ## Project Component Stages<
 
@@ -14,16 +14,21 @@ App.js contains Genie.js and Script.js components
 
 - The provided JS code included a preset prompt. While for the Genie app I replaced this with the userPrompt, it did give me an idea. The OPENAI starter kit included code with a premade prompt that let the user add extra specificity, but the user still knew what the overall prompt was going to be. I thought creating a madlibs style app where the user didn't know the context of the questions they were asked would be a fun addition to the challenge.
 
-- Creating the prompts for the Script app was a fun creative challenge. I had to rework it a few times to make sure I was utilizing as much of the return value from the API as I could. Below I detail the prompts, with What I ask the User - What I ask the API
+- Creating the prompts for the Script app was a fun creative challenge. I had to rework it a few times to make sure I was utilizing as much of the return value from the API as I could. Below I detail the prompts: with What I ask the User - What I ask the API
 
-Prompts
-1 choose a field of study - Tell me everything you know about blank.
-2 choose a hobby - What is the name of a job for a person who likes blank?
-3 choose an animal - what is a blank's favorite catchphrase?
+- - Prompts
 
-Script
-TED - "BLANK1"
-BARNEY - Ted, nobody cares about that. Now put on this "BLANK2" costume and let's head down to the bar. it's gonna be "BLANK3".
+- - 1 choose a field of study - Tell me everything you know about blank.
+
+- - 2 choose a hobby - What is the name of a job for a person who likes blank?
+
+- - 3 choose an animal - what is a blank's favorite catchphrase?
+
+- - Script
+
+- - TED: "BLANK1"
+
+- - BARNEY: Ted, nobody cares about that. Now put on this "BLANK2" costume and let's head down to the bar. it's gonna be "BLANK3".
 
 - I fussed with the temperature and max_tokens values of the second prompt to try to eliminate long-winded answers from the API. It's a bit of a wildcard, but I think that adds to the whimsy of the overall app.
 
