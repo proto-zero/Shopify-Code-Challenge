@@ -1,6 +1,8 @@
-# TODO
+# Sean Lenhart Shopify Code Challenge
 
-- hide API Key in env
+## <a href="https://shopify-code.herokuapp.com/">shopify-code.herokuapp.com/</a>
+
+## Notes
 
 prompts
 1 choose a field of study - Tell me everything you know about blank.
@@ -8,7 +10,24 @@ prompts
 3 choose an animal - what is a blank's favorite catchphrase?
 
 TED - "BLANK1"
-BARNEY - Ted, nobody cares about "PROMPT1". Now put on this "BLANK2" costume and let's head down to the bar. it's gonna be "BLANK3".
+BARNEY - Ted, nobody cares about that. Now put on this "BLANK2" costume and let's head down to the bar. it's gonna be "BLANK3".
+
+## TODO
+
+### Internet AI Genie
+[.] connect to API
+[.] return value from API
+[.] save value in state as an array
+[.] display newest to oldest
+[.] include prompt with return value
+[.] hide API Key in env
+[.] apply color scheme to layout
+
+### Script Generator
+[.] set up prompts to be fed to the API
+[.] set up questions for the user to feed into the API prompts
+[.] organize outcome into the script
+
 
 # Getting Started with Create React App
 
