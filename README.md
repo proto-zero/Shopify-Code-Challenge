@@ -16,27 +16,27 @@ BARNEY - Ted, nobody cares about that. Now put on this "BLANK2" costume and let'
 
 ### Internet AI Genie
 
-[x] connect to API
+- [x] connect to API
 
-[x] return value from API
+- [x] return value from API
 
-[x] save value in state as an array
+- [x] save value in state as an array
 
-[x] display newest to oldest
+- [x] display newest to oldest
 
-[x] include prompt with return value
+- [x] include prompt with return value
 
-[x] hide API Key in env
+- [x] hide API Key in env
 
-[x] apply color scheme to layout
+- [x] apply color scheme to layout
 
 ### Script Generator
 
-[x] set up prompts to be fed to the API
+- [x] set up prompts to be fed to the API
 
-[x] set up questions for the user to feed into the API prompts
+- [x] set up questions for the user to feed into the API prompts
 
-[x] organize outcome into the script
+- [x] organize outcome into the script
 
 # Getting Started with Create React App
 
