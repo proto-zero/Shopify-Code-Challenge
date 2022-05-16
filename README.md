@@ -2,7 +2,13 @@
 
 ## <a href="https://shopify-code.herokuapp.com/">shopify-code.herokuapp.com/</a>
 
-## Notes
+## Project Component Stages
+
+App.js contains Genie.js and Script.js components
+
+- Genie and Script use Style.css
+
+## Production Log
 
 prompts
 1 choose a field of study - Tell me everything you know about blank.
@@ -11,6 +17,26 @@ prompts
 
 TED - "BLANK1"
 BARNEY - Ted, nobody cares about that. Now put on this "BLANK2" costume and let's head down to the bar. it's gonna be "BLANK3".
+
+## Outline
+
+### Genie
+
+- Ask the User for a prompt. Save the prompt to an array.
+
+- Submit the prompt to the OPENAI API and save the return value to an array.
+
+- Clear the User prompt.
+
+- Map the prompt array and iterate through the return value array in reverse in order to display the newest content first.
+
+### Script
+
+- Ask the User to answer three questions.
+
+- Add the User answers to the preset prompts and submit them to the OPENAI API. Save the return values.
+
+- Insert the returned values into their spots in the script.
 
 ## TODO
 
